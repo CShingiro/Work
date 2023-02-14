@@ -66,7 +66,7 @@ public class Board {
                     }
                 }
             }
-        } while(tokenAdded == false);
+        } while(!tokenAdded);
         return tokenAdded;
     }
 
