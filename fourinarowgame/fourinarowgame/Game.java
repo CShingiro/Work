@@ -8,7 +8,7 @@ public class Game {
     private static Scanner scanner = new Scanner(System.in);
     private Board board;
 
-    public void setUpGame() throws Exception {
+    public void setUpGame() throws InvalidNameException {
         String playerOne;
         String playerTwo;
         System.out.println("Please enter Player one's name: ");
@@ -50,7 +50,7 @@ public class Game {
         }
     }
 
-    public void play() throws Exception {
+    public void play() throws InvalidNameException {
         boolean noWinner = true;
         setUpGame();
         int currentPlayerIndex = 0;
