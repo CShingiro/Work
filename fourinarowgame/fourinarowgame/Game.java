@@ -29,7 +29,7 @@ public class Game {
     }
 
     public void printWinner(Player player) {
-        System.out.println("Congratulations! The winner is " + player + "!");
+        System.out.println("Congratulations! The winner is " + player.getName() + "!");
     }
 
     public void playerTurn(Player currentPlayer) {
