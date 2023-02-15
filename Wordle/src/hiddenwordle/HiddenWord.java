@@ -3,19 +3,19 @@ package hiddenwordle;
 public class HiddenWord{
 
     /** Declare any fields (instance variables) **/
-    private String hiddenWord;
+    private String theWord;
 
     /** Declare a constructor */
-    public HiddenWord(String hiddenWord) {
-        this.hiddenWord = hiddenWord;
+    public HiddenWord(String theWord) {
+        this.theWord = theWord;
     }
 
     /** Write the getHint method */
     public String getHint(String guess) {
         StringBuilder result = new StringBuilder();
-        for(int i = 0;i<this.hiddenWord.length() && result.length() <= this.hiddenWord.length();i++) {
-            if(this.hiddenWord.contains(guess.substring(i,i+1))) {
-                if(this.hiddenWord.substring(i,i+1).equals(guess.substring(i,i+1))) {
+        for(int i = 0;i<this.theWord.length() && result.length() <= this.theWord.length();i++) {
+            if(this.theWord.contains(guess.substring(i,i+1))) {
+                if(this.theWord.substring(i,i+1).equals(guess.substring(i,i+1))) {
                     result.append(guess.substring(i,i+1));
                 } else {
                     result.append("+");
